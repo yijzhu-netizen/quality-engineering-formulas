@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "quality-engineering-formulas"
+version = "0.1.0"
+description = "Cpk/Ppk, SPC control chart, Gage R&R and Six Sigma formulas in pure Python, with free online calculators at qmsbox.com"
+readme = "README.md"
+license = {text = "MIT"}
+authors = [{name = "QMSBox"}]
+requires-python = ">=3.8"
+dependencies = []
+keywords = ["quality engineering", "six sigma", "spc", "control chart", "cpk", "ppk", "process capability", "gage r&r", "msa", "iatf 16949", "statistics"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Intended Audience :: Manufacturing",
+    "Intended Audience :: Science/Research",
+    "Topic :: Scientific/Engineering :: Mathematics",
+]
+
+[project.optional-dependencies]
+test = ["pytest"]
+
+[project.urls]
+Homepage = "https://qmsbox.com"
+"Online calculators" = "https://qmsbox.com"
+Source = "https://github.com/yijzhu-netizen/quality-engineering-formulas"
+
+[tool.setuptools]
+packages = ["qef"]
